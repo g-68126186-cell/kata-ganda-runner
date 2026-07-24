@@ -1,14 +1,13 @@
-KATA GANDA RUNNER TAHUN 3 v1.1
-BM Cikgu Tan
+SJK(C) BAHAU ADVENTURE — KATA GANDA v0.5
 
-Fungsi baharu:
-- Home menu
-- Pause dan continue
-- Restart
-- Top 10 ranking dalam browser
-- Semak kesilapan selepas tamat
-- Home button
-- Tiada butang kembali ke soalan sebelumnya
+5 kawasan:
+1. Pintu Sekolah — Runner
+2. Blok Ilmu — Isi tempat kosong
+3. Taman Bahasa — Padanan
+4. Gelanggang Biru — Basket Challenge
+5. Dewan Juara — Boss campuran
 
-Ranking disimpan pada peranti/browser yang sama menggunakan Local Storage.
-Untuk GitHub Pages, muat naik index.html, style.css, questions.js dan game.js.
+Termasuk foto sebenar sekolah, BGM Web Audio, auto-save, ranking, syiling, bintang dan semakan kesilapan.
+
+Buka index.html selepas mengekstrak ZIP.
+Untuk GitHub Pages, muat naik semua fail dan folder assets.
