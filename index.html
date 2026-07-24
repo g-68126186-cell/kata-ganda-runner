@@ -1,87 +1,11 @@
 <!DOCTYPE html>
-<html lang="ms">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Kata Ganda Runner Tahun 3</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div id="start" class="screen active">
-  <div class="card">
-    <div class="tag">BM Cikgu Tan</div>
-    <h1>KATA GANDA<br><span>RUNNER</span></h1>
-    <p>Tahun 3 · Belajar Sambil Berlari!</p>
-    <div class="avatars">
-      <button class="avatar selected" data-avatar="boy">👦<span>Aiman</span></button>
-      <button class="avatar" data-avatar="girl">👧<span>Mei Mei</span></button>
-    </div>
-    <label>Nama Murid<input id="name" placeholder="Contoh: Mei Xin"></label>
-    <label>Kelas
-      <select id="className">
-        <option value="">Pilih kelas</option><option>3M</option><option>3K</option><option>3B</option><option>3C</option><option>Lain-lain</option>
-      </select>
-    </label>
-    <button id="startBtn" class="main-btn">MULA BERLARI!</button>
-    <div id="error"></div>
-  </div>
-</div>
-
-<div id="game" class="screen">
-  <div class="hud">
-    <div>⭐ <b id="score">0</b></div>
-    <div>🪙 <b id="coins">0</b></div>
-    <div>❤ <b id="lives">3</b></div>
-    <div>⏱ <b id="time">60</b>s</div>
-  </div>
-  <div class="mission">
-    <small>MISI SEKARANG</small>
-    <strong id="mission">Cari Kata Ganda Penuh</strong>
-    <span id="combo"></span>
-  </div>
-  <div class="world">
-    <div class="sun"></div>
-    <div class="cloud c1"></div>
-    <div class="cloud c2"></div>
-    <div class="school">SEKOLAH</div>
-    <div class="trees">🌳　🌳　🌳　🌳　🌳</div>
-    <div class="road"></div>
-    <div id="runner" class="runner boy lane1">
-      <div class="bubble" id="bubble">Jom!</div>
-      <div class="head"><div class="hair"></div><div class="eyes">•　•</div><div class="mouth">⌣</div></div>
-      <div class="body"></div><div class="leg l"></div><div class="leg r"></div>
-    </div>
-    <div id="choices" class="choices">
-      <button data-lane="0"></button>
-      <button data-lane="1"></button>
-      <button data-lane="2"></button>
-    </div>
-    <div id="feedback"></div>
-  </div>
-  <div class="progress"><div id="bar"></div><span id="count">1 / 15</span></div>
-</div>
-
-<div id="result" class="screen">
-  <div class="card result-card">
-    <div class="trophy">🏆</div>
-    <h2>Tahniah!</h2>
-    <p id="message"></p>
-    <div class="grid">
-      <div><span>Nama</span><b id="rName"></b></div>
-      <div><span>Kelas</span><b id="rClass"></b></div>
-      <div><span>Markah</span><b id="rScore"></b></div>
-      <div><span>Betul</span><b id="rCorrect"></b></div>
-      <div><span>Syiling</span><b id="rCoins"></b></div>
-      <div><span>Combo Terbaik</span><b id="rCombo"></b></div>
-    </div>
-    <div id="stars" class="stars"></div>
-    <button id="copyBtn" class="main-btn">SALIN MARKAH</button>
-    <button id="sendBtn" class="blue-btn">HANTAR KEPADA GURU</button>
-    <button id="againBtn" class="soft-btn">MAIN SEMULA</button>
-    <p id="note"></p>
-  </div>
-</div>
-<script src="questions.js"></script>
-<script src="game.js"></script>
-</body>
-</html>
+<html lang="ms"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Kata Ganda Runner Tahun 3</title><link rel="stylesheet" href="style.css"></head><body>
+<section id="home" class="screen active"><div class="card"><div class="tag">BM Cikgu Tan</div><h1>KATA GANDA<br><span>RUNNER</span></h1><p>Tahun 3 · Belajar Sambil Berlari!</p><button id="goStart" class="main-btn">🎮 MULA BERMAIN</button><button id="goRanking" class="blue-btn">🏆 RANKING</button><button id="goHelp" class="soft-btn">📖 CARA BERMAIN</button></div></section>
+<section id="start" class="screen"><div class="card"><button class="top-back" data-home>← HOME</button><div class="tag">Pilih Pemain</div><h2>Siapa yang akan berlari?</h2><div class="avatars"><button class="avatar selected" data-avatar="boy">👦<span>Aiman</span></button><button class="avatar" data-avatar="girl">👧<span>Mei Mei</span></button></div><label>Nama Murid<input id="name" placeholder="Contoh: Mei Xin"></label><label>Kelas<select id="className"><option value="">Pilih kelas</option><option>3M</option><option>3K</option><option>3B</option><option>3C</option><option>Lain-lain</option></select></label><button id="startBtn" class="main-btn">MULA BERLARI!</button><div id="error"></div></div></section>
+<section id="game" class="screen game-screen"><div class="hud"><button id="pauseBtn" class="hud-btn">☰</button><div>⭐ <b id="score">0</b></div><div>🪙 <b id="coins">0</b></div><div>❤ <b id="lives">3</b></div><div>⏱ <b id="time">60</b>s</div></div><div class="mission"><small>MISI SEKARANG</small><strong id="mission">Cari Kata Ganda Penuh</strong><span id="combo"></span></div><div class="world"><div class="sun"></div><div class="cloud c1"></div><div class="cloud c2"></div><div class="school">SEKOLAH</div><div class="trees">🌳　🌳　🌳　🌳　🌳</div><div class="road"></div><div id="runner" class="runner boy lane1"><div class="bubble" id="bubble">Jom!</div><div class="head"><div class="hair"></div><div class="eyes">•　•</div><div class="mouth">⌣</div></div><div class="body"></div><div class="leg l"></div><div class="leg r"></div></div><div class="choices"><button data-lane="0"></button><button data-lane="1"></button><button data-lane="2"></button></div><div id="feedback"></div></div><div class="progress"><div class="track"><div id="bar"></div></div><span id="count">1 / 15</span></div></section>
+<section id="result" class="screen"><div class="card result-card"><div class="trophy">🏆</div><h2>Tahniah!</h2><p id="message"></p><div class="grid"><div><span>Nama</span><b id="rName"></b></div><div><span>Kelas</span><b id="rClass"></b></div><div><span>Markah</span><b id="rScore"></b></div><div><span>Betul</span><b id="rCorrect"></b></div><div><span>Syiling</span><b id="rCoins"></b></div><div><span>Combo Terbaik</span><b id="rCombo"></b></div></div><div id="stars" class="stars"></div><button id="reviewBtn" class="soft-btn">📖 SEMAK KESILAPAN</button><button id="rankingBtn" class="blue-btn">🏆 LIHAT RANKING</button><button id="copyBtn" class="main-btn">SALIN MARKAH</button><button id="againBtn" class="soft-btn">MAIN SEMULA</button><button class="soft-btn" data-home>🏠 HOME</button><p id="note"></p></div></section>
+<section id="ranking" class="screen"><div class="card"><button class="top-back" data-home>← HOME</button><div class="tag">Top 10</div><h2>🏆 Ranking Kelas</h2><div id="rankingList" class="ranking-list"></div><button id="clearRanking" class="danger-btn">PADAM RANKING</button></div></section>
+<section id="review" class="screen"><div class="card review-card"><button class="top-back" id="reviewBack">← KEPUTUSAN</button><div class="tag">Semak Kesilapan</div><h2>Belajar daripada kesilapan</h2><div id="reviewList"></div></div></section>
+<section id="help" class="screen"><div class="card"><button class="top-back" data-home>← HOME</button><div class="tag">Cara Bermain</div><h2>🏃 Mudah sahaja!</h2><div class="help-box"><p>1. Baca arahan kata ganda.</p><p>2. Pilih satu daripada tiga jawapan.</p><p>3. Jawapan betul memberi markah, syiling dan combo.</p><p>4. Jawapan salah akan menolak satu nyawa.</p><p>5. Tiada butang kembali ke soalan sebelumnya.</p><p>6. Semak jawapan salah selepas permainan tamat.</p></div></div></section>
+<div id="pauseOverlay" class="overlay"><div class="pause-card"><h2>Permainan Dijeda</h2><button id="continueBtn" class="main-btn">▶ TERUSKAN</button><button id="restartBtn" class="blue-btn">↻ MULA SEMULA</button><button id="quitBtn" class="soft-btn">🏠 KEMBALI KE HOME</button></div></div>
+<script src="questions.js"></script><script src="game.js"></script></body></html>
